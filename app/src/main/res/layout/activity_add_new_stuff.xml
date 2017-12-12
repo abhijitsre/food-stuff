@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddNewStuff"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stuff_title_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_gravity="start"/>
+
+        <EditText
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:id="@+id/et_stuff_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:hint="@string/stuff_name"
+            android:inputType="textPersonName|textCapSentences"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.01"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stuff_title_quantity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_gravity="start" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:id="@+id/et_stuff_quantity"
+            android:hint="@string/stuff_quantity"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.01" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stuff_title_units"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_gravity="start" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:id="@+id/et_stuff_units"
+            android:hint="@string/stuff_units"
+            android:inputType="textCapWords"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.01" />
+    <Button
+        android:id="@+id/button_addfoodstuff"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/button_title_add"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_gravity="end"
+        android:onClick="addToPantry"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.3" />
+
+</LinearLayout>

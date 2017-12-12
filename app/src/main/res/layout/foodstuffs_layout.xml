@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This contains a single task -->
+
+
+<!-- The orientation is vertical because there is a View at the end that provides a line at the end -->
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?android:attr/selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true"
+    tools:context=".MainActivity">
+    <!-- Within a single task, the layout of the stuff there. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textview_foodName"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical" />
+        <!--android:layout_marginEnd="120dp"-->
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="0dp" />
+            <!--android:layout_weight="1" />-->
+
+        <TextView
+            android:id="@+id/textview_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/textview_units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="8dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"/>
+
+        <Button
+            android:id="@+id/button_editfoodstuff"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:text="@string/edit" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>

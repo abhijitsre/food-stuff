@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Stock Up</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Food stuff layout -->
+    <string name="edit">Edit</string>
+
+    <!-- Strings for the DB -->
+    <string name="table_name">stuff</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- Strings for hints on Add New Stuff screen -->
+    <string name="stuff_name">What\'s the name?</string>
+    <string name="stuff_quantity">##</string>
+    <string name="stuff_units">How do you measure?</string>
+
+    <!-- Strings for titles on Add New Stuff screen -->
+    <string name="stuff_title_name">Name</string>
+    <string name="stuff_title_quantity">Quantity</string>
+    <string name="stuff_title_units">Units</string>
+    <string name="button_title_add">Add</string>
+
+
+</resources>
